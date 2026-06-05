@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Majlis Hari Jadi Syakira</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffb6c1,#ffd700);
+text-align:center;
+padding:20px;
+margin:0;
+}
+.container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+h1{color:#d63384;}
+.countdown{
+font-size:24px;
+font-weight:bold;
+margin:20px 0;
+color:#c2185b;
+}
+input,select{
+width:90%;
+padding:12px;
+margin:8px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+button{
+background:#d63384;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+button:hover{
+opacity:.9;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>🎂 Majlis Hari Jadi Syakira 🎂</h1>
+
+<p><strong>Tarikh:</strong> 22 Jun 2026</p>
+<p><strong>Masa:</strong> 7:00 Malam</p>
+<p><strong>Tempat:</strong><br>
+EMPEROR'S COURT<br>
+Hua Ho Manggis Level 3
+</p>
+
+<div id="countdown" class="countdown"></div>
+
+<h2>RSVP</h2>
+
+<form>
+<input type="text" placeholder="Nama Tetamu" required>
+
+<select required>
+<option value="">Kehadiran</option>
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+
+<input type="number" placeholder="Bilangan Tetamu" min="1">
+
+<input type="text" placeholder="Nombor Telefon">
+
+<button type="submit">Hantar RSVP</button>
+
+</form>
+
+<p>🎵 Can't Help Falling In Love 🎵</p>
+
+</div>
+
+<script>
+var countDownDate = new Date("Jun 22, 2026 19:00:00").getTime();
+
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("countdown").innerHTML =
+"⏳ " + days + " Hari " + hours + " Jam " +
+minutes + " Minit " + seconds + " Saat";
+
+}, 1000);
+</script>
+
+</body>
+</html>
