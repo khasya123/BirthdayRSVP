@@ -80,30 +80,21 @@ Hua Ho Manggis Level 3
 
 <button type="submit">Hantar RSVP</button>
 
+<form action="https://formspree.io/f/mlgkdzyz" method="POST">
+
+<input type="text" name="nama" placeholder="Nama Tetamu" required>
+
+<select name="kehadiran" required>
+<option value="">Kehadiran</option>
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+
+<input type="number" name="bilangan_tetamu" placeholder="Bilangan Tetamu" min="1">
+
+<input type="text" name="telefon" placeholder="Nombor Telefon">
+
+<button type="submit">Hantar RSVP</button>
+
 </form>
-
-<p>🎵 Can't Help Falling In Love 🎵</p>
-
-</div>
-
-<script>
-var countDownDate = new Date("Jun 22, 2026 19:00:00").getTime();
-
-var x = setInterval(function() {
-var now = new Date().getTime();
-var distance = countDownDate - now;
-
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-document.getElementById("countdown").innerHTML =
-"⏳ " + days + " Hari " + hours + " Jam " +
-minutes + " Minit " + seconds + " Saat";
-
-}, 1000);
-</script>
-
-</body>
 </html>
